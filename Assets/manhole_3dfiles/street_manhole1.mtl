@@ -1,0 +1,70 @@
+# Blender MTL File: 'manhole_street.blend'
+# Material Count: 6
+
+newmtl Material_0
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material_1
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material_2
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material_3
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Metal
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.250000 0.250000 0.250000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2_N.tif
+map_Kd C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2.tif
+map_Ns C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2_R.tif
+refl C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2_M.tif
+
+newmtl Metal.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.250000 0.250000 0.250000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2_N.tif
+map_Kd C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2.tif
+map_Ns C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2_R.tif
+refl C:\\Users\\msuter\\Downloads\\uploads_files_3255523_Hatch\\manhole_CGTrader\\Textures\\Hatch2_M.tif

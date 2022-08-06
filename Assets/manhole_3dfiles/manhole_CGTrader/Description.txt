@@ -1,0 +1,9 @@
+
+Low-poly rigged model of sewer hatch. Created in Blender v2.82
+
+Model properties: 940 vertices, 1876 tris.
+
+Archive contains:
+1	This model in Blender (Hatch2.blend), Filmbox (Hatch2.fbx, Manhole.fbx, Cover.fbx) and WaveFront (*.obj and *.mtl files) formats.
+2	Textures: color (Hatch2.tif), normal (Hatch2_N.tif), metalness (Hatch2_M.tif), roughness (Hatch2_R.tif) and ambient occlusion (Hatch2_AO.tif) maps.
+	All textures has 4096x4096 resolution.
