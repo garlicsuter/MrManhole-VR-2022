@@ -27,20 +27,44 @@ public class AnimationBoss : MonoBehaviour
     {
         ShootCannon();
         yield return new WaitForSeconds(1);
-        Q2.SetActive(true);
+        Q1.SetActive(false);
+        
     }
 
     IEnumerator Q1DelayCoroutine()
     {
-        //Print the time of when the function is first called.
-        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(2);
+        Q2.SetActive(true);
+        Debug.Log("Why am I waiting 2 seconds?");
+    }
 
+    public void Q2Correct()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q2CorrectRoutine());
+    }
+
+    IEnumerator Q2CorrectRoutine()
+    {
+        ShootCannon();
+        yield return new WaitForSeconds(1);
+        Q2.SetActive(false);
+        
+    }
+
+    public void Q2Delay()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q2DelayCoroutine());
+    }
+
+    IEnumerator Q2DelayCoroutine()
+    {
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(4);
-        Debug.Log("Why am I waiting 4 seconds?");
-        
-        //After we have waited 5 seconds print the time again.
-        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+        Q3.SetActive(true);
+        Debug.Log("Why am I waiting 4 seconds? To wait for animation to finish before showing next Q");
     }
 
     public void ShootCannon()
