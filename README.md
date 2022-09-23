@@ -11,10 +11,10 @@ Lid_Only Starting Vector3(1.19338,0, 1.332846)
 
 
 To Do:
-
+-Next will be the white liner moves in, frame added on top, then cement fill, each staggered by more Questions for the user.
 - Animate Bobcat+SS enter, spin
 - Road changes to Kerf Road
 - Activate Donut & Animate Donut Removal
 
-donut skinny mesh needs to become a child of "Cylinder-animatethis" at frame ____.
+
  
