@@ -13,11 +13,9 @@ public class AnimationCover : MonoBehaviour
         theCover.GetComponent<Animator>().Play("Cover-Remove");
         Debug.Log("Cover made cover remove!");
         StartButton.SetActive(false);
-        StartCoroutine(waiter());
-
+        StartCoroutine(waiter());    
     }
 
-   
 
     IEnumerator waiter()
     {
