@@ -1,6 +1,8 @@
 # MrManhole-VR-2022
 Positions:
 
+
+
 - Final Six Shooter Vector3 (3.962, Y, 0.568) and start(.09,-2.2105,2.255)
 - Final "Cylinder-animate this" Vector3() and start()
 
@@ -26,3 +28,6 @@ To Do:
 
 
  
+S770 Animations:
+1) DriveUp3Alt
+2) LargeLower3Alt
