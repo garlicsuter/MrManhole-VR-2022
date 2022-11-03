@@ -7,6 +7,8 @@ public class AnimationBoss : MonoBehaviour
     public GameObject theSpeedplate;
     public GameObject theCover;
     public GameObject StartButton;
+    public GameObject RoadFULL;
+    public GameObject RoadKerf;
     public GameObject Q1;
     public GameObject Q2;
     public GameObject Q3;
@@ -21,6 +23,11 @@ public class AnimationBoss : MonoBehaviour
         StartCoroutine(waiter());
     }
 
+    public void SwitchRoads()
+    {
+        RoadFULL.SetActive(false);
+        RoadKerf.SetActive(true);
+    }
     IEnumerator waiter()
     {
         //Wait for 1 second
