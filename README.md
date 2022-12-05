@@ -1,3 +1,21 @@
+-----------------------------------------------------------
+To Do:
+- Next will be the white liner moves in, frame added on top, then cement fill, each staggered by more Questions for the user.
+- Replace existing grayscale six shooter with "SS-animate this - larger 1" and anim
+- Road changes to Kerf Road
+- Activate Donut & Animate Donut Removal
+
+-----------------------------------------------------------
+ZR Scripts:
+Question.cs (goes on each question, 1-20). 
+- Assign (in Inspector) each of the 4 answers in each questions "Question" script
+
+Score.cs (Goes on GameManager)
+- Assign (in Inspector) each of the potential questions to be drawn from
+
+-----------------------------------------------------------
+
+
 # MrManhole-VR-2022
 Positions:
 
@@ -19,12 +37,6 @@ Initial "Location" of Arm Driver (0,0, 1.6)
 
 Final "Location" of S770 (0, -7.9, 0)
 Final "Location" of Arm Driver (0, 0, 0.91)
-
-To Do:
--Next will be the white liner moves in, frame added on top, then cement fill, each staggered by more Questions for the user.
-- Animate Bobcat+SS enter, spin
-- Road changes to Kerf Road
-- Activate Donut & Animate Donut Removal
 
 
  

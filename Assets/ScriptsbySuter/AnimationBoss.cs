@@ -54,7 +54,6 @@ public class AnimationBoss : MonoBehaviour
         ShootCannon();
         yield return new WaitForSeconds(1);
         Q1.SetActive(false);
-        
     }
 
     IEnumerator Q1DelayCoroutine()
@@ -76,7 +75,6 @@ public class AnimationBoss : MonoBehaviour
         ShootCannon();
         yield return new WaitForSeconds(1);
         Q2.SetActive(false);
-        
     }
 
     public void Q2Delay()
@@ -93,48 +91,35 @@ public class AnimationBoss : MonoBehaviour
         Debug.Log("Why am I waiting 4 seconds? To wait for animation to finish before showing next Q");
     }
 
+    public void Q3Correct()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q3CorrectRoutine());
+    }
+
+    IEnumerator Q3CorrectRoutine()
+    {
+        ShootCannon();
+        yield return new WaitForSeconds(1);
+        Q3.SetActive(false);
+    }
+
+    public void Q3Delay()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q3DelayCoroutine());
+    }
+
+    IEnumerator Q3DelayCoroutine()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(4);
+        Q4.SetActive(true);
+        Debug.Log("Why am I waiting 4 seconds? To wait for animation to finish before showing next Q");
+    }
+
     public void ShootCannon()
     {
         CorrectParticles.Play();
     }
-
-
-    //END
-
-
-    //public void Play0SPMoveIn()
-    //{
-    //    theSpeedplate.GetComponent<Animator>().Play("00_speedplate_movein_01");
-    //    Debug.Log("Speedplate globaly moved in");
-    //}
-
-    //public void Play1Pins()
-    //{
-    //    theSpeedplate.GetComponent<Animator>().Play("1_PinsOut");
-    //    Debug.Log("1 Pins Out");
-    //}
-
-    //public void Play2Expand()
-    //{
-    //    theSpeedplate.GetComponent<Animator>().Play("2_LeftRightHalvesExpand");
-    //    Debug.Log("2 expanded");
-    //}
-
-    //public void Play3PinsIn()
-    //{
-    //    theSpeedplate.GetComponent<Animator>().Play("3_PinsIn");
-    //    Debug.Log("3 Pins In");
-    //}
-
-    //public void Play4CircleSpin()
-    //{
-    //    theSpeedplate.GetComponent<Animator>().Play("4_SpinCircleLock");
-    //    Debug.Log("4 Sping Circle");
-    //}
-
-    //public void Play5HandleRelease()
-    //{
-    //    theSpeedplate.GetComponent<Animator>().Play("5_HandleLockRelease");
-    //    Debug.Log("5 Lock Release");
-    //}
 }
