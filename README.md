@@ -1,5 +1,15 @@
 -----------------------------------------------------------
 To Do:
+- SS Start Spin( ZROT:412): Frame 355, 
+frame 385 Zrot +90 = 502. Good.
+frame 415 Zrot +90 = 592. Good, with slowdown between. Adjust Curves handles to be inline with escalation to smooth
+frame 445 Zrot +90 = 682. Good, more Curves adjustments to make a straight steady 45 degree incline.
+frame 475 Zrot +90 = 772.
+frame 505 Zrot +90 = 862.
+frame 535 Zrot +90 = 952.
+
+
+STOP SPINNG FRAME: 555.
 - Next will be the white liner moves in, frame added on top, then cement fill, each staggered by more Questions for the user.
 - Replace existing grayscale six shooter with "SS-animate this - larger 1" and anim
 - Road changes to Kerf Road
