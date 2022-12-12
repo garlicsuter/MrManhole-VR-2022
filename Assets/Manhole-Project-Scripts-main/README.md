@@ -10,7 +10,6 @@ Inputs:
 - Different answerLocalPosition if desired
   - Default locations for *four buttons* are given in the script and not visible in the inspector
 - Set maxQuestionPoints to total amount of points avaliable for that question
-  - currentQuestionPoints automatically matches in the script
 
 ## Scoring Script
 *Give script to GameManager*
@@ -22,17 +21,15 @@ Summary:
 
 Inputs:
 - Input all questions to totalQuestions
-- Set chosenQuestions length to 5
+- Set chosenQuestions length to 4
 
 ## Score Text
 *Give script to GameManager*
 
 Design Notes:
 - Names of texts cannot be changed
-  - Specific Names: Q1 - Score, Q2 - Score, Q3 - Score, Q4 - Score, Q5 - Score, and Total Score
+  - Specific Names: Q1 - Score, Q2 - Score, Q3 - Score, Q4 - Score, and Total Score
 - Location, font, font size, etc. can be changed
-
----
 
 ## Final Notes
 

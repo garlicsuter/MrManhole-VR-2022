@@ -7,7 +7,8 @@ public class Question : MonoBehaviour
     public GameObject[] buttonAnswers;
     public Vector3[] answerLocalPosition;
     public int maxQuestionPoints = 4;
-    public int currentQuestionPoints = 4;
+
+    public int currentQuestionPoints;
 
     void Start()
     {
