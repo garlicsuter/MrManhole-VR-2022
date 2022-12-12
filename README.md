@@ -8,6 +8,7 @@ frame 475 Zrot +90 = 772.
 frame 505 Zrot +90 = 862.
 frame 535 Zrot +90 = 952.
 
+LidRing(Donut actually) starting: zPot: 0.015895, new 0.01448
 
 STOP SPINNG FRAME: 555.
 - Next will be the white liner moves in, frame added on top, then cement fill, each staggered by more Questions for the user.

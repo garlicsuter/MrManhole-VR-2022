@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimationBoss : MonoBehaviour
 {
     public GameObject theSpeedplate;
+    public GameObject S770;
     public GameObject theCover;
     public GameObject StartButton;
     public GameObject RoadFULL;
@@ -15,6 +16,11 @@ public class AnimationBoss : MonoBehaviour
     public GameObject Q4;
     public ParticleSystem CorrectParticles;
 
+    public void ChildSpeedPlatetoS770()
+    {
+        theSpeedplate.transform.parent = S770.transform;
+    }
+    
     public void CoverRemove()
     {
         theCover.GetComponent<Animator>().Play("Cover-Remove");
