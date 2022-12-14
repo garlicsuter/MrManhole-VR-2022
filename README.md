@@ -1,20 +1,16 @@
 -----------------------------------------------------------
 To Do:
-- SS Start Spin( ZROT:412): Frame 355, 
-frame 385 Zrot +90 = 502. Good.
-frame 415 Zrot +90 = 592. Good, with slowdown between. Adjust Curves handles to be inline with escalation to smooth
-frame 445 Zrot +90 = 682. Good, more Curves adjustments to make a straight steady 45 degree incline.
-frame 475 Zrot +90 = 772.
-frame 505 Zrot +90 = 862.
-frame 535 Zrot +90 = 952.
+Audio - engine, grinding, etc
+Shat silver
+Warning sticker (Jamie Sending)
+2 combo button reset
+A1,A2,A3 with 3 exports of Version A with 3 different sets of questions (Can we do this in ONE app?)
+Cheat Code: Sends correct answer (right hand w user, left hand controller with booth person)
+video loop of all steps
 
-LidRing(Donut actually) starting: zPot: 0.015895, new 0.01448
-
-STOP SPINNG FRAME: 555.
-- Next will be the white liner moves in, frame added on top, then cement fill, each staggered by more Questions for the user.
-- Replace existing grayscale six shooter with "SS-animate this - larger 1" and anim
-- Road changes to Kerf Road
-- Activate Donut & Animate Donut Removal
+kerf on
+old road off
+donut road on (all done via the SS_STL script "SS_Scripted"
 
 -----------------------------------------------------------
 ZR Scripts:
@@ -50,7 +46,18 @@ Final "Location" of S770 (0, -7.9, 0)
 Final "Location" of Arm Driver (0, 0, 0.91)
 
 
- 
-S770 Animations:
-1) DriveUp3Alt
-2) LargeLower3Alt
+- SS Start Spin( ZROT:412): Frame 355, 
+frame 385 Zrot +90 = 502. Good.
+frame 415 Zrot +90 = 592. Good, with slowdown between. Adjust Curves handles to be inline with escalation to smooth
+frame 445 Zrot +90 = 682. Good, more Curves adjustments to make a straight steady 45 degree incline.
+frame 475 Zrot +90 = 772.
+frame 505 Zrot +90 = 862.
+frame 535 Zrot +90 = 952.
+
+LidRing(Donut actually) starting: zPot: 0.015895, new 0.01448
+
+STOP SPINNG FRAME: 555.
+- Next will be the white liner moves in, frame added on top, then cement fill, each staggered by more Questions for the user.
+- Replace existing grayscale six shooter with "SS-animate this - larger 1" and anim
+- Road changes to Kerf Road
+- Activate Donut & Animate Donut Removal

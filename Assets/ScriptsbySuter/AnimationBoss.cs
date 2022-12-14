@@ -15,7 +15,12 @@ public class AnimationBoss : MonoBehaviour
     public GameObject Q3;
     public GameObject Q4;
     public ParticleSystem CorrectParticles;
+    public ScoreKeeper scoreKeeper;
 
+    private void Awake()
+    {
+        scoreKeeper = GetComponent<ScoreKeeper>();
+    }
     public void ChildSpeedPlatetoS770()
     {
         theSpeedplate.transform.parent = S770.transform;
@@ -53,6 +58,7 @@ public class AnimationBoss : MonoBehaviour
     {
         //Start the coroutine we define below named ExampleCoroutine.
         StartCoroutine(Q1CorrectRoutine());
+        scoreKeeper.CorrectAddTen();
     }
 
     IEnumerator Q1CorrectRoutine()
@@ -74,6 +80,7 @@ public class AnimationBoss : MonoBehaviour
     {
         //Start the coroutine we define below named ExampleCoroutine.
         StartCoroutine(Q2CorrectRoutine());
+        scoreKeeper.CorrectAddTen();
     }
 
     IEnumerator Q2CorrectRoutine()
@@ -92,15 +99,16 @@ public class AnimationBoss : MonoBehaviour
     IEnumerator Q2DelayCoroutine()
     {
         //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(10);
         Q3.SetActive(true);
-        Debug.Log("Why am I waiting 4 seconds? To wait for animation to finish before showing next Q");
+        Debug.Log("Waited 10 seconds before Q3 Activated in AnimationBoss");
     }
 
     public void Q3Correct()
     {
         //Start the coroutine we define below named ExampleCoroutine.
         StartCoroutine(Q3CorrectRoutine());
+        scoreKeeper.CorrectAddTen();
     }
 
     IEnumerator Q3CorrectRoutine()

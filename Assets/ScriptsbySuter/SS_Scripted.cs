@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class SS_Scripted : MonoBehaviour
 {
-    public GameObject Mounty;
-    public GameObject Donut;
-    public GameObject donutLid;
+    //public GameObject Mounty;
+    //public GameObject Donut;
+    public GameObject oldRing;
     public GameObject streetDonutHole;
-    public GameObject oldStreet;
-    public GameObject speedplateDummy;
+    //public GameObject oldStreet;
+    //public GameObject speedplateDummy;
     public GameObject speedplateOriginal;
-    public GameObject lidRingOriginal;
+    //public GameObject lidRingOriginal;
     public GameObject roadKerf;
     public GameObject road_1;
-    private Vector3 offset;
+    //private Vector3 offset;
 
 
-    void Start()
-    {
-        offset = transform.position - Mounty.transform.position;
-    }
+    //void Start()
+    //{
+    //    offset = transform.position - Mounty.transform.position;
+    //}
 
-    void LateUpdate()
-    {
-        transform.position = Mounty.transform.position + offset;
-    }
+    //void LateUpdate()
+    //{
+    //    transform.position = Mounty.transform.position + offset;
+    //}
 
     public void KerfOn()
     {
@@ -35,14 +35,11 @@ public class SS_Scripted : MonoBehaviour
 
     public void DonutStart()
     {
-        
-        Donut.SetActive(true);
-        donutLid.SetActive(true);
+        roadKerf.SetActive(false);
         streetDonutHole.SetActive(true);
-        oldStreet.SetActive(false);
-        speedplateDummy.SetActive(true);
+        //oldStreet.SetActive(false);
         speedplateOriginal.SetActive(false);
-        lidRingOriginal.SetActive(false);
+        oldRing.SetActive(false);
     }
 
 }
