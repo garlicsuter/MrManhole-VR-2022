@@ -13,6 +13,9 @@ old road off
 donut road on (all done via the SS_STL script "SS_Scripted"
 
 -----------------------------------------------------------
+Color Codes
+Cutter Orange: dd8f00, R-221 G-143 B-0
+
 ZR Scripts:
 Question.cs (goes on each question, 1-20). 
 - Assign (in Inspector) each of the 4 answers in each questions "Question" script
