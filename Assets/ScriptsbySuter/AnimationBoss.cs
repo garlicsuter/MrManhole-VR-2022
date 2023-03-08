@@ -14,6 +14,7 @@ public class AnimationBoss : MonoBehaviour
     public GameObject Q2;
     public GameObject Q3;
     public GameObject Q4;
+    public GameObject Q5;
     public ParticleSystem CorrectParticles;
     public ScoreKeeper scoreKeeper;
 
@@ -126,11 +127,42 @@ public class AnimationBoss : MonoBehaviour
 
     IEnumerator Q3DelayCoroutine()
     {
-        //yield on a new YieldInstruction that waits for 5 seconds.
+        //yield on a new YieldInstruction that waits for 4 seconds.
         yield return new WaitForSeconds(4);
         Q4.SetActive(true);
-        Debug.Log("Why am I waiting 4 seconds? To wait for animation to finish before showing next Q");
+        Debug.Log("Waiting 4 seconds to wait for animation to finish before showing next Q");
     }
+
+    /////////////////Begin Q4
+    public void Q4Correct()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q3CorrectRoutine());
+        scoreKeeper.CorrectAddTen();
+    }
+
+    IEnumerator Q4CorrectRoutine()
+    {
+        ShootCannon();
+        yield return new WaitForSeconds(1);
+        Q4.SetActive(false);
+    }
+
+    public void Q4Delay()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q4DelayCoroutine());
+    }
+
+    IEnumerator Q4DelayCoroutine()
+    {
+        //yield on a new YieldInstruction that waits for 4 seconds.
+        yield return new WaitForSeconds(4);
+        Q5.SetActive(true);
+        Debug.Log("Waiting for fly-in of white ring,topper,lid before showing next Q");
+    }
+    /////////////////End Q4
+    
 
     public void ShootCannon()
     {
