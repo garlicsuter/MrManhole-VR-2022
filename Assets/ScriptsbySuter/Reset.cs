@@ -10,6 +10,7 @@ public class Reset : MonoBehaviour
     public GameObject Q2;
     public GameObject Q3;
     public GameObject Q4;
+    public GameObject Q5;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +21,8 @@ public class Reset : MonoBehaviour
         Q2.SetActive(false);
         Q3.SetActive(false);
         Q4.SetActive(false);
+        Q5.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
