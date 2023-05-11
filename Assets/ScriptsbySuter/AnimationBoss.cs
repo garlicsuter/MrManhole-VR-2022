@@ -10,6 +10,10 @@ public class AnimationBoss : MonoBehaviour
     public GameObject StartButton;
     public GameObject RoadFULL;
     public GameObject RoadKerf;
+    public GameObject whiteRing;
+    public GameObject risingCement;
+    public GameObject cementParticles;
+    public GameObject cementBag;
     public GameObject Q1;
     public GameObject Q2;
     public GameObject Q3;
