@@ -48,4 +48,9 @@ public class ScoreKeeper : MonoBehaviour
         UpdateScore();
     }
 
+    public void StopTimer()
+    {
+        runTimer = false;
+    }
+
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimationBoss : MonoBehaviour
 {
@@ -19,7 +20,9 @@ public class AnimationBoss : MonoBehaviour
     public GameObject Q3;
     public GameObject Q4;
     public GameObject Q5;
+    public GameObject YouWin;
     public ParticleSystem CorrectParticles;
+    public ParticleSystem theCementParticles;
     public ScoreKeeper scoreKeeper;
 
     private void Awake()
@@ -30,7 +33,7 @@ public class AnimationBoss : MonoBehaviour
     {
         theSpeedplate.transform.parent = S770.transform;
     }
-    
+
     public void CoverRemove()
     {
         theCover.GetComponent<Animator>().Play("Cover-Remove");
@@ -132,7 +135,7 @@ public class AnimationBoss : MonoBehaviour
     IEnumerator Q3DelayCoroutine()
     {
         //yield on a new YieldInstruction that waits for 4 seconds.
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
         Q4.SetActive(true);
         Debug.Log("Waiting 4 seconds to wait for animation to finish before showing next Q");
     }
@@ -141,7 +144,7 @@ public class AnimationBoss : MonoBehaviour
     public void Q4Correct()
     {
         //Start the coroutine we define below named ExampleCoroutine.
-        StartCoroutine(Q3CorrectRoutine());
+        StartCoroutine(Q4CorrectRoutine());
         scoreKeeper.CorrectAddTen();
     }
 
@@ -163,13 +166,51 @@ public class AnimationBoss : MonoBehaviour
         //yield on a new YieldInstruction that waits for 4 seconds.
         yield return new WaitForSeconds(4);
         Q5.SetActive(true);
-        Debug.Log("Waiting for fly-in of white ring,topper,lid before showing next Q");
     }
     /////////////////End Q4
-    
+
+    /////////////////Begin Q5
+    public void Q5Correct()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q5CorrectRoutine());
+        scoreKeeper.CorrectAddTen();
+    }
+
+    IEnumerator Q5CorrectRoutine()
+    {
+        ShootCannon();
+        DumpCement();
+        yield return new WaitForSeconds(1);
+        Q5.SetActive(false);
+    }
+
+    public void Q5Delay()
+    {
+        //Start the coroutine we define below named ExampleCoroutine.
+        StartCoroutine(Q5DelayCoroutine());
+    }
+
+    IEnumerator Q5DelayCoroutine()
+    {
+        yield return new WaitForSeconds(4);
+        cementBag.SetActive(false);
+        YouWin.SetActive(true);
+    }
+    /////////////////End Q5
 
     public void ShootCannon()
     {
         CorrectParticles.Play();
+    }
+
+    public void DumpCement()
+    {
+        theCementParticles.Play();
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
