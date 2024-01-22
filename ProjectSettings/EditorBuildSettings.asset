@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Level1-Old-Cartoon.unity
-    guid: afdcb113ffd5a4353ad88f0dd03743af
-  - enabled: 1
-    path: Assets/Scenes/Level1-2-NewCity.unity
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Level1 A.unity
     guid: 2f18285863457224988b4213541bcc30
+  - enabled: 1
+    path: Assets/Scenes/Level3 C (New Qs).unity
+    guid: a77cebebefbf75446ae6afcb495d4f12
+  - enabled: 0
+    path: Assets/Scenes/Level2 B (New Qs).unity
+    guid: 2a73445f0702b304095629f79d54f183
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 8fccb80e6c9a84389a75f2c1ed4d786d, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d3134b6f939114be9b8d6dbeff42d453, type: 2}
